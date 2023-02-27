@@ -1,0 +1,29 @@
+android_app {
+    name: "FirstSystemApp",
+
+    srcs: ["src/**/*.java"],
+
+    resource_dirs: ["res"],
+
+    manifest: "AndroidManifest.xml",
+
+    sdk_version: "current",
+
+    certificate: "platform",
+
+    product_specific: true,
+
+    // optimize: {
+    //     proguard_flags_files: ["proguard.flags"],
+    // },
+
+    // platform_apis: true,
+    // privileged: true,
+    
+    //依赖
+    static_libs: ["androidx.appcompat_appcompat",
+                  "androidx.recyclerview_recyclerview",
+                 "com.google.android.material_material",
+                 "androidx-constraintlayout_constraintlayout"],
+
+}
